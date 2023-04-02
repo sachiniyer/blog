@@ -1,43 +1,57 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
 
+:root {
+    --main-fg-color: #DCDCCC;
+    --main-fg1-color: #FFFFEF;
+    --main-fg2-color: #FFFFFD;
+    --main-bg-color: #3F3F3F;
+    --main-bg2-color: #5F5F5F;
+    --main-bg3-color: #2B2B2B;
+    --main-blue-color: #8CD0D3;
+    --main-green-color: #7F9F7F;
+    --main-yellow-color: #F0DFAF;
+    --main-purple-color: #DC8CC3;
+}
+
 body {
     font-family: "Inter", sans-serif;
     font-weight: 400;
-    color: #333;
+    color: var(--main-fg-color);
+    background-color: var(--main-bg-color);
     line-height: 1.8em;
     font-size: 17px;
 }
 
 a {
-    color: #3700ff;
+    color: var(--main-blue-color);
     text-decoration: none;
     word-break: break-word;
 }
     a:hover {
-        border-bottom: 2px solid #3700ff;
+        border-bottom: 2px solid var(--main-blue-color);
     }
 
 html,button,input,select,textarea {
-    color: #333;
+    color: var(main-);
 }
 
 ::-moz-selection {
-    background: #3700ff;
+    background: var(--main-blue-color);
     text-shadow: none;
-    color: #fff;
+    color: var(--main-fg2-color);
 }
 
 ::selection {
-    background: #3700ff;
+    background: var(--main-blue-color);
     text-shadow: none;
-    color: #fff;
+    color: var(--main-fg2-color);
 }
 
 hr {
     display: block;
     height: 1px;
     border: 0;
-    border-top: 1px solid #ccc;
+    border-top: 1px solid var(--main-fg-color);
     margin: 1rem 0;
     padding: 0;
 }
@@ -74,28 +88,28 @@ table {
 
 table th,
 table td {
-  border-bottom: 1px solid #dee2e6;
+  border-bottom: 1px solid var(--main-fg-color);
   padding: 0.75rem;
   vertical-align: top;
 }
 
 table thead th {
-  border-bottom: 2px solid #dee2e6;
+  border-bottom: 2px solid var(--main-fg-color);
   vertical-align: bottom;
 }
 
 table tbody + tbody {
-  border-top: 2px solid #dee2e6;
+  border-top: 2px solid var(--main-fg-color);
 }
 
 table tbody tr:nth-of-type(even) {
-  background-color: rgba(0, 0, 0, 0.15);
+  background-color: var(--main-bg-color);
 }
 
 table th {
-  background-color: #212529;
-  border-color: #32383e;
-  color: #fff;
+  background-color: var(--main-bg-color);
+  border-color: var(--main-bg-color);
+  color: var(--main-fg2-color);
 }
 
 textarea {
@@ -108,7 +122,7 @@ blockquote {
     font-size: 1.4rem;
     font-family: Georgia,bitstream charter,serif;
     border-left: 3px solid;
-    border-color: #3700ff;
+    border-color: var(--main-green-color);
     padding-left: 20px;
 }
 
@@ -123,7 +137,7 @@ blockquote em {
 
 
 h1, h2, h3, h4, h5, h6 {
-    color: #333;
+    color: var(--main-fg-color);
     font-weight: 500;
     line-height: 1.3em;
     margin: 30px 0 20px 0;
@@ -209,7 +223,7 @@ ul {
 
 .highlight {
     background: 0 0;
-    background-color: #FAFAFA;
+    background-color: var(--main-bg3-color);
 }
 
 .wrapper {
@@ -241,7 +255,7 @@ ul {
     margin: 0;
 }
     .site-title a {
-        color: #333;
+        color: var(--main-fg-color);
         text-decoration: none !important;
     }
     .site-title a:hover {
@@ -257,7 +271,7 @@ ul {
     }
 
 .header nav {
-    border-top: 1px solid #eee;
+    border-top: 1px solid var(--main-fg1-color);
     padding-top: 15px;
 }
 
@@ -273,10 +287,10 @@ ul {
     margin: 0 30px 0 0;
 }
     .header nav.social a {
-        color: #333;
+        color: var(--main-fg-color);
     }
     .header nav.social a:hover {
-        color: #3700ff;
+        color: var(--main-blue-color);
     }
 
 .header .site-description nav {
@@ -300,20 +314,20 @@ ul {
 }
 
 .header .site-description .scheme-toggle a.dark svg {
-    fill: #f8e04f;
-    color: #f8e04f;
+    fill: var(--main-yellow-color);
+    color: var(--main-yellow-color);
 }
 
 .header .site-description .scheme-toggle a.light svg {
-    fill: grey;
-    color: black;
+    fill: var(--main-bg-color);
+    color: var(--main-fg-color);
 }
 
 .section .section-header {
     font-size: 0.75rem;
     font-weight: 600;
     text-transform: uppercase;
-    color: #999;
+    color: var(--main-fg-color);
     margin-bottom: 20px;
     letter-spacing: 1px;
 }
@@ -354,20 +368,21 @@ ul {
 }
 
 .post .draft-label {
-    color: #3700ff;
+    color: var(--main-blue-color);
     text-decoration: none;
     padding: 2px 4px;
     border-radius: 4px;
     margin-left: 6px;
-    background-color: #f9f2f4;
+    background-color: var(--main-fg-color);
 }
+
 
 .post .tags a {
     display: inline-block;
-    border: 1px solid #3700ff;
+    border: 1px solid var(--main-blue-color);
     border-radius: 3px;
     padding: 0px 6px;
-    color: #3700ff;
+    color: var(--main-blue-color);
     line-height: 20px;
     font-size: 0.85em;
     text-decoration: none;
@@ -382,16 +397,16 @@ ul {
 .footer {
     text-align: right;
     font-size: 0.75em;
-    color: #999;
-    border-top: 1px solid #f4f4f4;
+    color: var(--main-fg-color);
+    border-top: 1px solid var(--main-fg2-color);
     margin-top: 40px;
     padding: 15px 0;
 }
     .footer a {
-        color: #666;
+        color: var(--main-fg1-color);
     }
     .footer a:hover {
-        color: #3700ff;
+        color: var(--main-blue-color);
     }
 
 .tag-cloud {

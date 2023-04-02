@@ -7,11 +7,10 @@
 		{{ partial "head.html" . }}
 
 		<h1 class="page-title">{{ .Title }}</h1>
-		
-		{{ with (.Site.GetPage .Title) }}
-		<ul>
-			{{ range .Pages }}
-				<li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+
+		{{ with (.Page.GetPage .Title) }}
+		<ul> {{ range .Pages }}
+			<li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
 			{{ end }}
 		</ul>
 		{{ end }}
