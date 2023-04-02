@@ -1,0 +1,4 @@
+baseURL = 'https://blog.sachiniyer.com'
+languageCode = 'en-us'
+title = "Sachin's Blog"
+theme = 'hugo-ink'
