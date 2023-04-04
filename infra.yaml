@@ -29,8 +29,6 @@ spec:
             value: "1"
           - name: GIT_SYNC_SUBMODULES
             value: "recursive"
-        securityContext:
-          runAsUser: 65533 # git-sync user
         volumeMounts:
         - name: git-checkout
           mountPath: /data
