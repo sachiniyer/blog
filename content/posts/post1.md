@@ -109,7 +109,7 @@ I ended up choosing polling because letting the git repo have access to the clus
 
 ### How to Serve Files
 
-This was pretty easy. You can just create a custom docker container that runs the hugo server off of some directory of files (or just use [busybox](https://hub.docker.com/_/busybox/) and pull the [hugo binary](https://github.com/gohugoio/hugo/releases)).
+This was pretty easy. You can just create a [custom docker container](https://hub.docker.com/r/sachiyer/hugo-server) that runs the hugo server off of some directory of files (or just use [busybox](https://hub.docker.com/_/busybox/) and pull the [hugo binary](https://github.com/gohugoio/hugo/releases)).
 
 You can use the fast reload server as well, as that seems pretty stable[^5] (no need to reload the container ever time you change a file).
 
