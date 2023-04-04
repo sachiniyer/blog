@@ -4,25 +4,25 @@ date: 2023-04-02T02:30:50-04:00
 draft: false
 ---
 
-# Why do a blog
+# Why do a Blog?
 
 To write down a history of my thoughts about computer science, and create reference articles about topics I am knowledgeable enough in (at that moment) to write something meaningful about. My goal is only post about things that I will find useful for future me (and which therefore may be useful to you).
 
-# How to deploy a blog
+# How to Deploy a Blog
 
-## Choosing a source of truth
+## Choosing a Source of Truth
 
 A source of truth is the place where all of your CI/CD[^1] infrastructure stems from. If you use a wordpress site or a CMS[^2] like [Grav](https://getgrav.org/)[^3], then your source of truth might be the admin page (and underlying db) of that CMS where you edit and save the files. 
 
 I am a big fan of using git as a source of truth (gives you version control and much more). In this case, I have a [github repo](https://github.com/sachiniyer/blog), which acts as the central repository from which everything is based off of.
 
-## Choosing a deployment method
+## Choosing a Deployment Method
 
 There are so many ways to get a website up from [cloud](https://docs.aws.amazon.com/AmazonS3/latest/userguide/WebsiteHosting.html) to just running a [bare metal nginx server](https://medium.com/@jasonrigden/how-to-host-a-static-website-with-nginx-8b2dd0c5b301). I decided to use my [kubernetes cluster](https://github.com/sachiniyer/cheap_portable_k3s/).
 
 Now, because I have selected an external git server as my source of truth, I need to figure out a way to get the files from that git repo to my cluster. 
 
-### How to sync git repo
+### How to Sync Git Repo
 
 There are two main ways to do this, webhooks and polling.
 {{< rawhtml >}}
@@ -107,13 +107,13 @@ There are two main ways to do this, webhooks and polling.
 
 I ended up choosing polling because letting the git repo have access to the cluster was a hard no[^4] (and I did not want to enable inbound access for the container). You can do this with the [git-sync container](https://github.com/kubernetes/git-sync), or a [custom container](https://github.com/sachiniyer/git-openresty) I made to do webhook syncing with [luajit](https://openresty.org/en/luajit.html).
 
-### How to serve files
+### How to Serve Files
 
 This was pretty easy. You can just create a custom docker container that runs the hugo server off of some directory of files (or just use [busybox](https://hub.docker.com/_/busybox/) and pull the [hugo binary](https://github.com/gohugoio/hugo/releases)).
 
 You can use the fast reload server as well, as that seems pretty stable[^5] (no need to reload the container ever time you change a file).
 
-### How to connect git sync container and hugo server
+### How to Connect Git Sync Container and Hugo Server
 
 To do this you can take advantage of kubernetes and mount a block of storage between the two. This allows the git sync container to put updated files into the block. Then, because we are using the fast reload server, those changes should be picked up automatically.
 
@@ -154,11 +154,11 @@ This results in a simple yet effective CI/CD infrastructure for using git as a s
 ```
 [My deployment file](https://github.com/sachiniyer/blog/blob/main/infra.yaml) if you want it.
 
-# What now
+# What Now?
 
 The goal is to keep a history of the thoughts and interesting projects I stumble across and put up information about how they work. 
 
-### Weird name?
+### Weird Name?
 
 Ya, it's an emacs thing. Search and replace in emacs can be done with either `M-%` or `M-x query-replace`. `M-%` is a little hard to reach. Some people just deal with it, while others probably rebind it. I have gotten fond of just typing out `M-x query-replace` and letting [ido-mode](https://www.masteringemacs.org/article/introduction-to-ido-mode) handle the rest. It is one of the least optimized and most fond parts of my emacs setup.
 
