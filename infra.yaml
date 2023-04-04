@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
       - name: git-sync
-        image: k8s.gcr.io/git-sync:v3.1.2
+        image: k8s.gcr.io/git-sync
         env:
           - name: GIT_SYNC_REPO
             value: "https://github.com/sachiniyer/blog.git"
