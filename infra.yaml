@@ -44,6 +44,8 @@ spec:
           - name: ENVIRONMENT
             value: live
         image: sachiyer/hugo-server:latest
+        securityContext:
+          runAsUser: 65533
         volumeMounts:
         - name: git-checkout
           mountPath: /data
