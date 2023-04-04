@@ -1,10 +1,10 @@
 ---
-title: "Deploying and starting this blog"
+title: "Deploying and Starting this Blog"
 date: 2023-04-02T02:30:50-04:00
 draft: false
 ---
 
-# Why do a Blog?
+# Why Do a Blog?
 
 To write down a history of my thoughts about computer science, and create reference articles about topics I am knowledgeable enough in (at that moment) to write something meaningful about. My goal is only post about things that I will find useful for future me (and which therefore may be useful to you).
 
