@@ -124,11 +124,13 @@ This results in a simple yet effective CI/CD infrastructure for using git as a s
 ```goat
                            +------------------+ 
                            |                  |
-                           | External Traffic |
+  PUBLIC                   | External Traffic |
                            |      (you)       |
                            |                  |
                            +----------+-------+
+--------------------------------------|--------------------
                                       |
+  PRIVATE                             |
                                       |
 +-------------------+      +----------+----------+
 |                   |      |                     |
