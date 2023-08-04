@@ -12,7 +12,7 @@ theme = 'hugo-ink'
 
 [[menu.main]]
 name = "Home"
-url = "/"
+url = "https://sachiniyer.com"
 weight = 1
 
 [[menu.main]]
