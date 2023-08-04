@@ -2,3 +2,36 @@ baseURL = 'https://blog.sachiniyer.com'
 languageCode = 'en-us'
 title = "M-% || M-x query-replace"
 theme = 'hugo-ink'
+
+[params]
+    subtitle = "Sachin's thoughts on random tech stuff."
+
+    avatar = "/icon.png"
+
+    featherIconsCDN = true
+
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[menu.main]]
+name = "All posts"
+url = "/posts"
+weight = 2
+
+[[menu.main]]
+name = "About"
+url = "https://sachiniyer.com/about"
+weight = 3
+
+[[params.social]]
+name = "RSS"
+icon = "rss"
+url = "/index.xml"
+
+
+[[params.social]]
+name = "Github"
+icon = "github"
+url = "https://github.com/sachiniyer"
