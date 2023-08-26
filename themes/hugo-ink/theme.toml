@@ -11,5 +11,5 @@ features = ["blog", "Clean and minimal", "Responsive", "Social media links", "Sy
 min_version = "0.37.0"
 
 [author]
-  name = "Kailash Nadh"
-  homepage = "https://nadh.in"
+name = "Kailash Nadh"
+homepage = "https://nadh.in"
