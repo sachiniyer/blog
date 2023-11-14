@@ -1,3 +1,8 @@
 # My blog
 
-hosted at https://blog.sachiniyer.com
+Hosted at https://blog.sachiniyer.com
+
+# Licensing
+
+- Content: CC BY-NC
+- Code: MIT
