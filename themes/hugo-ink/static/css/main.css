@@ -1,4 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap");
+@font-face {
+  font-family: "Inter";
+  src: url("../main.ttf") format("truetype");
+}
 
 :root {
   --main-fg-color: #dcdccc;

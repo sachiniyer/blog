@@ -10,12 +10,12 @@ avatar = "/icon.png"
 
 [[params.social]]
 name = "github"
-icon = "github.svg"
+icon = "/github.svg"
 url = "https://github.com/sachiniyer/blog"
 
 [[params.social]]
 name = "rss"
-icon = "rss.svg"
+icon = "/rss.svg"
 url = "/index.xml"
 
 [[menu.main]]
