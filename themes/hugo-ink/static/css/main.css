@@ -472,6 +472,14 @@ ul {
   text-align: right;
 }
 
+.social-icon {
+  width: 20px;
+  height: 20px;
+  /* https://codepen.io/sosuke/pen/Pjoqqp color to css filter */
+  filter: invert(85%) sepia(43%) saturate(322%) hue-rotate(128deg)
+    brightness(96%) contrast(85%);
+}
+
 @media (max-width: 900px) {
   body {
     padding: 20px;

@@ -4,6 +4,34 @@ title = "M-% || M-x query-replace"
 theme = 'hugo-ink'
 
 
+[params]
+subtitle = "Sachin's thoughts on random tech stuff."
+avatar = "/icon.png"
+
+[[params.social]]
+name = "github"
+icon = "github.svg"
+url = "https://github.com/sachiniyer/blog"
+
+[[params.social]]
+name = "rss"
+icon = "rss.svg"
+url = "/index.xml"
+
+[[menu.main]]
+name = "Home"
+url = "https://sachiniyer.com"
+weight = 1
+
+[[menu.main]]
+name = "All posts"
+url = "/posts"
+weight = 2
+
+[[menu.main]]
+name = "About"
+url = "https://sachiniyer.com/about"
+weight = 3
 
 [markup]
   defaultMarkdownHandler = 'goldmark'
@@ -68,34 +96,3 @@ theme = 'hugo-ink'
     endLevel = 3
     ordered = false
     startLevel = 2
-
-[params]
-subtitle = "Sachin's thoughts on random tech stuff."
-avatar = "/icon.png"
-
-[[menu.main]]
-name = "Home"
-url = "https://sachiniyer.com"
-weight = 1
-
-[[menu.main]]
-name = "All posts"
-url = "/posts"
-weight = 2
-
-[[menu.main]]
-name = "About"
-url = "https://sachiniyer.com/about"
-weight = 3
-
-[[params.social]]
-name = "RSS"
-icon = "rss"
-url = "/index.xml"
-
-
-[[params.social]]
-name = "Github"
-icon = "github"
-url = "https://github.com/sachiniyer"
-
