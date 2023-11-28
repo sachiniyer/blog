@@ -8,15 +8,14 @@ theme = 'hugo-ink'
 subtitle = "Sachin's thoughts on random tech stuff."
 avatar = "/icon.png"
 
-[[params.social]]
-name = "github"
-icon = "/github.svg"
-url = "https://github.com/sachiniyer/blog"
-
-[[params.social]]
-name = "rss"
-icon = "/rss.svg"
-url = "/index.xml"
+  [[params.social]]
+  name = "github"
+  icon = "/github.svg"
+  url = "https://github.com/sachiniyer/blog"
+  [[params.social]]
+  name = "rss"
+  icon = "/rss.svg"
+  url = "/index.xml"
 
 [[menu.main]]
 name = "Home"
