@@ -5,7 +5,7 @@ theme = 'hugo-ink'
 
 
 [params]
-subtitle = "Sachin's thoughts on random tech stuff."
+subtitle = "Sachin's random thoughts."
 avatar = "/icon.png"
 
   [[params.social]]
