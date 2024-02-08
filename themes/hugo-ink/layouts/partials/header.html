@@ -36,4 +36,5 @@
 		media="screen"
 		href="{{ .Site.BaseURL }}css/main.css"
 	/>
+	{{ if .Params.math }}{{ partial "helpers/katex.html" . }}{{ end }}
 </head>
