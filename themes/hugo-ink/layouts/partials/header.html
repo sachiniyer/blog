@@ -36,5 +36,11 @@
 		media="screen"
 		href="{{ .Site.BaseURL }}css/main.css"
 	/>
-	{{ if .Params.math }}{{ partial "helpers/katex.html" . }}{{ end }}
+	{{ if .Params.math }}{{ partial "helpers/katex.html" . }}{{ end }} {{ if
+	.Page.Store.Get "hasMermaid" }}
+	<script type="module">
+		import mermaid from "/mermaid/mermaid.esm.min.mjs";
+		mermaid.initialize({ startOnLoad: true });
+	</script>
+	{{ end }}
 </head>
