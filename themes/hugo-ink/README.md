@@ -8,6 +8,8 @@ Licensed under the MIT license.
 
 - Now, zenburn stylings
 - Code styling integration
-- Goat Diagram integration (maybe mermaid as well in the future)
-- No calls to cdns (google fonts, feather...)
+- Goat Diagram integration
+- Mermaid Diagram integration
+- Katex integration
+- No calls to cdns (google fonts, feather, jsdeliver...)
 - No disqus anything
