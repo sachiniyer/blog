@@ -1,19 +1,22 @@
 /* Background */
 .bg {
-  background-color: var(--main-bg3-color);
+  background-color: var(--main-bg2-color);
 }
 /* PreWrapper */
 .chroma {
-  background-color: var(--main-bg3-color);
+  background-color: var(--main-bg2-color);
 }
 /* Other */
 .chroma .x {
+  color: var(--main-fg-color);
 }
 /* Error */
 .chroma .err {
+  color: var(--main-red-color);
 }
 /* CodeLine */
 .chroma .cl {
+  color: var(--main-fg-color);
 }
 /* LineLink */
 .chroma .lnlinks {
@@ -97,6 +100,7 @@
 }
 /* Name */
 .chroma .n {
+  color: var(--main-yellow-color);
 }
 /* NameAttribute */
 .chroma .na {
@@ -108,6 +112,7 @@
 }
 /* NameBuiltinPseudo */
 .chroma .bp {
+  color: var(--main-blue-color);
 }
 /* NameClass */
 .chroma .nc {
@@ -137,6 +142,7 @@
 }
 /* NameFunctionMagic */
 .chroma .fm {
+  color: var(--main-blue-color);
 }
 /* NameLabel */
 .chroma .nl {
@@ -149,9 +155,11 @@
 }
 /* NameOther */
 .chroma .nx {
+  color: var(--main-blue-color);
 }
 /* NameProperty */
 .chroma .py {
+  color: var(--main-blue-color);
 }
 /* NameTag */
 .chroma .nt {
@@ -164,21 +172,27 @@
 }
 /* NameVariableClass */
 .chroma .vc {
+  color: var(--main-orange-color);
 }
 /* NameVariableGlobal */
 .chroma .vg {
+  color: var(--main-orange-color);
 }
 /* NameVariableInstance */
 .chroma .vi {
+  color: var(--main-orange-color);
 }
 /* NameVariableMagic */
 .chroma .vm {
+  color: var(--main-orange-color);
 }
 /* Literal */
 .chroma .l {
+  color: var(--main-green1-color);
 }
 /* LiteralDate */
 .chroma .ld {
+  color: var(--main-green1-color);
 }
 /* LiteralString */
 .chroma .s {
@@ -241,35 +255,35 @@
 }
 /* LiteralNumber */
 .chroma .m {
-  color: var(--main-fg-color);
+  color: var(--main-orange-color);
 }
 /* LiteralNumberBin */
 .chroma .mb {
-  color: var(--main-fg-color);
+  color: var(--main-orange-color);
 }
 /* LiteralNumberFloat */
 .chroma .mf {
-  color: var(--main-fg-color);
+  color: var(--main-orange-color);
 }
 /* LiteralNumberHex */
 .chroma .mh {
-  color: var(--main-fg-color);
+  color: var(--main-orange-color);
 }
 /* LiteralNumberInteger */
 .chroma .mi {
-  color: var(--main-fg-color);
+  color: var(--main-orange-color);
 }
 /* LiteralNumberIntegerLong */
 .chroma .il {
-  color: var(--main-fg-color);
+  color: var(--main-orange-color);
 }
 /* LiteralNumberOct */
 .chroma .mo {
-  color: var(--main-fg-color);
+  color: var(--main-orange-color);
 }
 /* Operator */
 .chroma .o {
-  color: var(--main-fg-color);
+  color: var(--main-blue2-color);
 }
 /* OperatorWord */
 .chroma .ow {
@@ -314,6 +328,7 @@
 }
 /* Generic */
 .chroma .g {
+  color: var(--main-green-color);
 }
 /* GenericDeleted */
 .chroma .gd {
