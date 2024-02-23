@@ -3,6 +3,8 @@ languageCode = 'en-us'
 title = "M-% || M-x query-replace"
 theme = 'hugo-ink'
 
+enableEmoji = true
+
 [params]
 subtitle = "Sachin's random thoughts."
 avatar = "/icon.png"
