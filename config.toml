@@ -8,6 +8,7 @@ enableEmoji = true
 [params]
 subtitle = "Sachin's random thoughts."
 avatar = "/icon.png"
+author = "Sachin Iyer"
 
   [[params.social]]
   name = "github"
